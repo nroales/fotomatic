@@ -1,8 +1,12 @@
 /* Universal Styles */
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto-Regular", sans-serif;
   font-size: 16px;
+}
+
+body {
+  line-height: 1.6;
 }
 
 .main-content {
@@ -117,9 +121,17 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image: url(../images/banner-landingpage.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 #sign-up-cta {
+  position: relative;
+  top: 171px;
+  left: 10%;
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
@@ -214,6 +226,11 @@ header .mobile {
   justify-content: space-between;
   padding: 4rem 5%;
   background-color: #f3f3f3;
+  height: 635px;
+}
+
+.center {
+  text-align: center;
 }
 
 .feature {
@@ -223,7 +240,18 @@ header .mobile {
   background-color: white;
 }
 
+.image-container img {
+  display: block;
+  max-width: 100%;
+}
+
 .feature .image-container {
+  width: 90%;
+  height: 65%;
+  margin: 0 auto;
+}
+
+.image-container {
   width: 90%;
   height: 65%;
   margin: 0 auto;
@@ -231,7 +259,9 @@ header .mobile {
 
 .feature h2 {
   padding-bottom: .5rem;
+  margin-top: 40px;
   font-size: 2.25rem;
+  line-height: 1.2;
   font-weight: bold;
   color: #4a4a4a;
 }
@@ -273,6 +303,7 @@ header .mobile {
 #filters-section {
   padding: 4rem 0;
   background-color: #4a4a4a;
+  padding-top: 64px;
 }
 
 #filters-section .content {
@@ -280,10 +311,15 @@ header .mobile {
   margin-bottom: 5rem;
 }
 
+.center {
+  text-align: center;
+}
+
 #filters-section .content h2 {
   font-size: 2.25rem;
   font-weight: bold;
   color: white;
+  text-align: center;
 }
 
 #filters-section .content h3 {
@@ -291,9 +327,11 @@ header .mobile {
   line-height: 1.4;
   font-weight: 300;
   color: white;
+  text-align: center;
 }
 
 #filters-section .images-container {
+  display: flex;
   max-width: 100%;
   padding: 0 1%;
 }
